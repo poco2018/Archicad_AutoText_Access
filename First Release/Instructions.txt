@@ -1,1 +1,18 @@
+This Python Script uses a Addon to obtain the value of any AutoText for any element Type in Archicad.
+The AddON Command is added on to Tibor's (Archicad) example Addons for your convenience. The command uses the same NameSpace as Tibor's.
+Basically in ExecuteAddOnCommand you enter the desired operation (Get AutoText) and the key name as parameters and click on the disired element.
+As in:   response = acc.ExecuteAddOnCommand(act.AddOnCommandId('AdditionalJSONCommands','Utilities'),parameters)
+The script can be modified to gather all types or specific elements. I have not done this but will demo that if there is any demand.
+As of now you must click the element to get the AutoText value as in Archicad.
 
+To get a AutoText:
+1. In Python set the command to "GetParams" - with quotes.Set the "inParams" list to the element type to click on and second - the name of the desired key.
+The return value is in the terminal which you can capture with your script modification.
+Other available commands are:
+"GetElem" -- returns Guid in String form of clicked element
+"GetParams" - Gets AutoText as above. Must use exact spelling of key.
+"GetSlab - Gets all AutoText Properties of the clicked element and writes to report writer. Remember to turn on Report Session.
+
+The AddOn and script are diliberatly limited untill I can gauge any further interest (if any). If you have any suggestions,leave them in the video comments. I made a video to describe the process.
+Finally,I noticed a bug whereby one AddOn Command Handler may interfer with another which will return a bad Params error. If that happens, a reboot generally fixes it or you can isolate your AddOns. The intent here is allow the Python Script to access any AutoText value and mitigate the present limit on data in the Python API. The dowside is that the AddOn Command Handler must remain loaded. Hopefully a future revision (Release 26??) will incorporate natively.
+Any ideas for appilcation with access to the new data. Note: ihe Python scripts may be slow but using a manual update , the should not be a problem. Also the Pyhon script must be run externally and not from the Python Palette. i think this may be a limit in the Python interdace. I have not found this inconvenence to be a problem.

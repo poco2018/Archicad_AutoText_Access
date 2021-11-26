@@ -1,1 +1,41 @@
 
+1.	GetElem—Command
+a.	Input Params – One – enter Element type as in API_WallID
+b.	Returns – Element Guid in String Form
+c.	Must click on the element type Specified
+
+2.	GetValue—Command
+a.	Input Params – Two – Element Type & Property Key – in that order
+b.	Returns -- Value in String Form
+c.	Must click on Type of and the element desired
+
+3.	GetParams – Command
+a.	Input Params – One – Element Type
+b.	Returns – Writes Properties to Session Report Returns success or fail
+c.	Must click on Type of and the element desired
+
+4.	GetProjInfo – Command
+a.	Input Params – None
+b.	Returns – Writes Project Properties to Session Report Returns success or fail
+c.	Auto Completes
+
+5.	GetPoint – Command
+a.	Input Params – None
+b.	Click on point in plan
+c.	Returns x &y points in String form
+
+6.	GetSelected – Command
+a.	Input Params – Nome
+b.	Must pre-select Elements before hand
+c.	Return – Guid of Elements in the order selected
+
+7.	SetProjInfo – Command
+a.	Input Params  - Two – Property Key then Value
+b.	Returns – success or fail
+
+8.	GetProjValue – Command
+a.	Input Params – one – Property Key
+b.	Returns – Value in String form 
+c.	Input must be in string form
+
+

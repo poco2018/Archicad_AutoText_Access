@@ -1,1 +1,9 @@
 
+Revised GetSelected:
+Now returns for each element selected, a array.
+[Guid in string form, Layer, Floor Name, Element ID] 
+in order to identify which element was selected
+
+Added New Command -- GetValueFromGuid
+Input (Params) Guid in String Form and Property Value Name
+Returns Value in String Form

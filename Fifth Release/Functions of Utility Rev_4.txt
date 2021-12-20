@@ -41,7 +41,7 @@ b. Returns Guid list of Elements of specified Type in a list.
 c. Returns Only Types not available to Python API such as Label and Text.
 d. Use native Python Functions for supported Types.
 11. SetLabelText – Command
-a. Input Params – two – Label Guid and AutoText Property Key ( include <>)
+a. Input Params – three – Label Guid, Type (must be API_LabelID), and AutoText Property Key ( include <>)
 b. Returns Success or Fail
 c. For Existing Associated AutoText labels only (API_LabelID)
 d. Changes selected AutoText Label values
@@ -58,7 +58,7 @@ c. Text Boxes only (API_TextID)
 a. Input – Text and font size in mm
 b. Creates text box label (API_TextID) at the clicked Point
 15. ChangeLabelText – Command
-a. Input – text
+a. Input – two – guid & text
 b. Changes the text of a selected label
 c. For API_LabelID’s
 16. GetQuantity – Command

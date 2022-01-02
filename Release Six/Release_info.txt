@@ -1,0 +1,1 @@
+Added Element Type tp GetSelected Returned Array

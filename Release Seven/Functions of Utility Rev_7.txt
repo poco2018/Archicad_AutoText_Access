@@ -1,0 +1,88 @@
+Functions of Utility (easy) Command Handler(01/04/22)
+1. GetElem—Command
+a. Input Params – One – enter Element type as in API_WallID
+b. Returns – Element Guid in String Form
+c. Must click on the element type Specified
+2. GetValue—Command
+a. Input Params – Two – Element Type (API_WallID) & Property Name – in that order
+b. Returns -- Value in String Form
+c. Must click on Type of and the element desired
+3. GetParams – Command
+a. Input Params – One – Element Type of Form - i.e.  API_WallID
+b. Returns – Writes Available AutoText Properties to Session Report; Returns success or fail
+c. Must click on Type of and the element desired
+4. GetProjInfo – Command
+a. Input Params – None
+b. Returns – Writes Project Info Properties to Session Report. Returns success or fail
+c. Auto Completes
+5. GetPoint – Command
+a. Input Params – None
+b. Click on point in plan
+c. Returns x &y points in String form in a list
+6. GetSelected – Command
+a. Input Params – None
+b. Must pre-select Elements before hand
+c. Return – Guids of Elements in the order selected in a list.
+d. Returns Array for each element –[ Guid , Layer, Floor, Element ID, Element Type]
+7. SetProjInfo – Command
+a. Input Params  - Two – Property Name then Value
+b. Returns – success or fail
+c. For Project Info Only
+8. GetProjValue – Command
+a. Input Params – one – Property Name
+b. Returns – Value in String form 
+c. Input must be in string form
+9. GetValueFromGuid - Command
+a. Input Params – two- Guid  (use str) and AutoText property Key
+b. Returns Property Value. Must have previous Guid of relevant Element
+c. Guid and Key are in String Form
+10. GetElemList – Command
+a. Input Params – one – Element Type i.e. API_LabelID
+b. Returns Guid list of Elements of specified Type in a list.
+c. Returns Only Types not available to Python API such as Label and Text.
+d. Use native Python Functions for supported Types.
+11. SetLabelText – Command
+a. Input Params – Four – Label Guid,’API_LabelID’,AutoText Property Key ( include <>),fontsize(string)
+b. Returns Success or Fail
+c. For Existing Associated AutoText labels only (API_LabelID)
+d. Changes selected AutoText Label values
+12. GetAutoText – Command
+a. Input Params – Guid of Associated Label and Label status (TRUE/FALSE)
+b. Returns Value or AutoText Property Key of selected Label
+c. For Associated AutoText Labels only (API_LabelID)
+d. TRUE returns value; FALSE Returns Property Key of value
+13. ChangeText – Command
+a. Input Params – Text Box Guid in String Form And new text.
+b. Changes Text Label – can not exceed 254 char; \n is permissible.
+c. Text Boxes only (API_TextID)
+14. CreateText – Command
+a. Input – Text and font size in mm
+b. Creates text box label (API_TextID) at the clicked Point
+15. ChangeLabelText – Command
+a. Input – two – guid & text
+b. Changes the text of a selected label
+c. For API_LabelID’s
+d. Deprecated = Use SetLabelText
+16. GetQuantity – Command
+a. Input Params – Three – Element Guid, Element Type i.e. API_WallID, value name
+b. Gets quantity values from selected Element.
+c. Value name must be as listed in API Quantity Structure.
+d. For Walls, Slabs, Doors & Windows Only.
+17. CalcQuantities – Command
+a. Input – Click a Element
+b. Returns – quantities, composites & guids of composites
+c. Not all Element types included
+18. CalcComponentQuantities – Command
+a. Input – Click a Element
+b. Returns – Properties of the Elements Components
+c. Not All Elements included
+19. GetComponets – Command
+a. Input – Click a Element
+b. Returns – Guids of Elements Components
+20. CreateLabel_Associative – Command
+a. Input – two  - text & fontsize(string)
+b. Click on a Element and second, third points for arrow.
+c. Returns success – no error checking
+d. Creates a associative label – can use text or property keys
+e. If line returns are embedded, must double click on label to re-size text box(bug).
+

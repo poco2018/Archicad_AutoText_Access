@@ -1,1 +1,2 @@
-01/05/22 -- Added font size to SetLabelText
+01/05/22 -- Added font size to SetLabelText-- Redefined GetValueFroGuid Info to make more clear
+Remove some status messages as being not necessary.

@@ -1,0 +1,2 @@
+This version of Data_Access.apx is the release compilation without the debug info. The release version should be used instead of the previous debug version 
+in order to eliminate some possible conflicts. For Windows only - archicad 25.

@@ -1,2 +1,2 @@
-Release version of data_access.apx. Added command GetBMAtt to get attributes of Building Materials. Note that some attribute in the Phyical properties group will not report correctly in the USA version.
-However, these attributes are repeated in the User definfed Properties 
+Release version of data_access.apx. Added command GetBMAtt to get attributes of Building Materials. Note that some attribute in the Phyical properties group will report in metric in the USA version.
+However, those attributes are repeated in the User definfed Properties as just numbers, so there is no conversion there.
